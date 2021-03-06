@@ -1,0 +1,8 @@
+sudo docker rm -f chat-room-widget
+sudo docker rmi -f 9502044626/chat-room-widget:lts-4
+sudo docker pull 9502044626/chat-room-widget:lts-5
+sudo docker run -p 80:80 --name chat-room-widget -d 9502044626/chat-room-widget:lts-5
+
+ 
+
+
